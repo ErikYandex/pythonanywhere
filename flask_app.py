@@ -1,11 +1,13 @@
 
 # A very simple Flask Hello World app for you to get started with...
+import calendar
 
 from datetime import datetime
 
 from flask import Flask
 
-DAYNAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+DAYNAMES = list(calendar.day_name)
 
 
 app = Flask(__name__)
